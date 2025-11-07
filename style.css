@@ -289,7 +289,7 @@ img {
     border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
-    transition: background-color .2s;
+    
 }
 
     .btn:hover {
@@ -813,7 +813,7 @@ img {
 .gallery__item {
     border-radius: 20px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    
 }
 
     
@@ -877,4 +877,5 @@ img {
 .footer__design {
     font-size: 16px;
     text-align: center;
+
 }
