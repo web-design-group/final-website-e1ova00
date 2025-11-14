@@ -30,7 +30,7 @@ img {
 .header__container {
     width: 90%;
     max-width: 1360px;
-    matgin: 0 auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -211,8 +211,10 @@ img {
 }
 
 .tours {
-    padding: 100px 0;
+   
     background: #fff;
+    padding: 100px 80px;
+    
 }
 
 .tours__title {
@@ -220,7 +222,8 @@ img {
     font-weight: 700;
     margin-bottom: 80px;
     text-align: left;
-    margin-left: 250px; 
+    margin-left: 250px;
+    width: 1360px;
 }
 
 .tours__cards {
@@ -373,7 +376,8 @@ img {
     font-weight: 700;
     margin-bottom: 80px;
     text-align: left;
-    margin-left: 200px; 
+    margin-left: 250px;
+    width: 1360px;
 }
 
 .why__items {
@@ -466,10 +470,10 @@ img {
 .reviews__title {
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 80px;
     text-align: left;
+    margin-left: 250px;
     width: 1360px;
-    max-width: 90%;
-    margin: 0 auto 60px;
 }
 
 .reviews__list {
