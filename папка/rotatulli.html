@@ -87,7 +87,8 @@
                             </div>
                             <img src="img/inst1.png"
                                  alt="Завтрак в парижском бистро"
-                                 class="story-card__img">
+                                 class="story-card__img"
+                                   data-video="video1.mp4">
                         </article>
                     </div>
 
@@ -100,7 +101,8 @@
                             </div>
                             <img src="img/inst2.png"
                                  alt="Вид на Эйфелеву башню и ужин"
-                                 class="story-card__img">
+                                 class="story-card__img"
+                                   data-video="video2.mp4">
                         </article>
                     </div>
 
@@ -113,7 +115,8 @@
                             </div>
                             <img src="img/inst3.png"
                                  alt="Ресторан с французской кухней"
-                                 class="story-card__img">
+                                 class="story-card__img"
+                                   data-video="video3.mp4">
                         </article>
                     </div>
                 </div>
@@ -161,7 +164,31 @@
             crossorigin="anonymous">
     </script>
 
-   
+    <script>
+        
+        document.querySelectorAll(".story-card__img").forEach(img => {
+
+            img.addEventListener("click", () => {
+
+                const videoSrc = img.dataset.video; 
+
+               
+                const video = document.createElement("video");
+                video.src = videoSrc;
+                video.autoplay = true;
+                video.controls = true;
+                video.className = "story-video";
+
+                
+                img.style.opacity = "0";
+
+                setTimeout(() => {
+                    img.replaceWith(video);
+                }, 150);
+            });
+        });
+    </script>
+
     <script>
         const backBtn = document.querySelector('.back__btn');
         if (backBtn) {
