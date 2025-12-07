@@ -42,10 +42,38 @@
     <main>
 
 
-        <section class="hero">
-            <div class="container-xl hero__inner">
+        <section class="hero position-relative">
+
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="img/ratatouille.png" class="d-block w-100 hero__img" alt="Ratatouille">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/hero2.png" class="d-block w-100 hero__img" alt="Hero 2">
+                    </div>
+
+                </div>
+
+
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+
+            <div class="container-xl hero__inner hero__text-block">
                 <h1 class="hero__title">Тур «Рататуй»</h1>
                 <p class="hero__subtitle">Лучший выбор для ценителей кухни</p>
+
                 <a href="tours.html"
                    class="hero__btn"
                    data-bs-toggle="tooltip"
@@ -53,6 +81,7 @@
                     Купить тур
                 </a>
             </div>
+
         </section>
 
 
