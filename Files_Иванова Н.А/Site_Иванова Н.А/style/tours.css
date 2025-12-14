@@ -90,7 +90,7 @@ body {
     justify-self: start;
     width: 64px;
     height: 64px;
-    background-image: url('img/back-1.png');
+    background-image: url('../img/back-1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -99,7 +99,7 @@ body {
 }
 
     .back__btn:hover {
-        background-image: url('img/back-2.png');
+        background-image: url('../img/back-2.png');
     }
 
 
